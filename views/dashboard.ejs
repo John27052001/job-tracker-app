@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>📋 My Job Applications</h1>
+  <a href="/add">+ Add New Job</a> | <a href="/logout">Logout</a>
+  <ul>
+    <% jobs.forEach(job => { %>
+      <li>
+        <strong><%= job.title %></strong> at <%= job.company %> — <em><%= job.status %></em>
+        <form action="/delete/<%= job._id %>" method="POST" style="display:inline;">
+          <button>Delete</button>
+        </form>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>

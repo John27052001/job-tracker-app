@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Job</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Add Job Application</h1>
+  <form method="POST" action="/add">
+    <input name="title" placeholder="Job Title" required>
+    <input name="company" placeholder="Company Name" required>
+    <select name="status">
+      <option value="Applied">Applied</option>
+      <option value="Interviewing">Interviewing</option>
+      <option value="Offer">Offer</option>
+      <option value="Rejected">Rejected</option>
+    </select>
+    <button>Add Job</button>
+  </form>
+  <a href="/dashboard">⬅ Back to Dashboard</a>
+</body>
+</html>
