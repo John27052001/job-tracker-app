@@ -22,8 +22,6 @@ A full-stack job tracking application where users can register, log in, and mana
 
 ## 📸 Screenshots
 
-> _Replace these image links with your actual screenshots_
-
 ### 📋 Dashboard View
 ![Dashboard](./screenshots/dashboard.png)
 
@@ -75,7 +73,7 @@ job-tracker-app/
 
 **Megha John**  
 GitHub: [@John27052001](https://github.com/John27052001)  
-LinkedIn: [Add your LinkedIn link here]
+
 
 ---
 
