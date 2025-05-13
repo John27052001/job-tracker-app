@@ -1,0 +1,75 @@
+
+:root {
+    --primary: #007acc;
+    --danger: #e74c3c;
+    --success: #2ecc71;
+    --warning: #f39c12;
+    --bg: #f4f6f9;
+    --text: #333;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  h1 {
+    color: var(--primary);
+    text-align: center;
+  }
+  
+  a {
+    color: var(--primary);
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  form {
+    margin: 1rem 0;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #005f99;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border-left: 6px solid var(--primary);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .status-Applied { border-left-color: var(--primary); }
+  .status-Interviewing { border-left-color: var(--warning); }
+  .status-Offer { border-left-color: var(--success); }
+  .status-Rejected { border-left-color: var(--danger); }
+  

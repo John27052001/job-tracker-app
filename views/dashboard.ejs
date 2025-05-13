@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,13 +7,15 @@
 </head>
 <body>
   <h1>📋 My Job Applications</h1>
-  <a href="/add">+ Add New Job</a> | <a href="/logout">Logout</a>
+  <a href="/add">+ Add Job</a> | <a href="/logout">Logout</a>
   <ul>
     <% jobs.forEach(job => { %>
-      <li>
-        <strong><%= job.title %></strong> at <%= job.company %> — <em><%= job.status %></em>
-        <form action="/delete/<%= job._id %>" method="POST" style="display:inline;">
-          <button>Delete</button>
+      <li class="status-<%= job.status %>">
+        <strong><%= job.title %></strong> at <%= job.company %>
+        <br>
+        <em>Status: <%= job.status %></em>
+        <form action="/delete/<%= job._id %>" method="POST" style="margin-top: 10px;">
+          <button type="submit">Delete</button>
         </form>
       </li>
     <% }) %>
